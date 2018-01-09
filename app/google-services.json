@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "426451645540",
+    "firebase_url": "https://teacher-tracker-4cf1d.firebaseio.com",
+    "project_id": "teacher-tracker-4cf1d",
+    "storage_bucket": "teacher-tracker-4cf1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426451645540:android:f8c9ebd8e80c6aaf",
+        "android_client_info": {
+          "package_name": "com.kausr.teachertracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426451645540-e3uoii44hfdlanq8h8hd83rsf81ke8to.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kausr.teachertracker",
+            "certificate_hash": "777bfdff8c7e24da80f91e84db930e4cf3417dbd"
+          }
+        },
+        {
+          "client_id": "426451645540-jfa90eu7ur5phkpqgjcvl2qilruoks6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbpUG2S_I7SMF_F-6zqoPzgQuZ7lfMsV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426451645540-jfa90eu7ur5phkpqgjcvl2qilruoks6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
