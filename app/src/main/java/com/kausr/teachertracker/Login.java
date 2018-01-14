@@ -85,15 +85,15 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         Log.d(TAG, "onConnectionFailed:"+ ConnectionResult);
     }
 
-    void navigate(View view)
-    {
-        Intent i=new Intent(getApplicationContext(),ContactsContract.Profile.class);
-        i.putExtra("name",name);
-        startActivity(i);
-    }
-    void loc(View view)
-    {
-        Intent i =new Intent(getApplicationContext(),Location.class);
-        startActivity(i);
-    }
+//    void navigate(View view)
+//    {
+//        Intent i=new Intent(getApplicationContext(),ContactsContract.Profile.class);
+//        i.putExtra("name",name);
+//        startActivity(i);
+//    }
+//    void loc(View view)
+//    {
+//        Intent i =new Intent(getApplicationContext(),Location.class);
+//        startActivity(i);
+//    }
 }
