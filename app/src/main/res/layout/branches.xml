@@ -16,7 +16,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/compsci"/>
+            android:src="@drawable/cse"/>
 
         <ImageButton
             android:id="@+id/but2"
@@ -39,7 +39,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/it"/>
+            android:src="@drawable/mechanical"/>
 
         <ImageButton
             android:id="@+id/but4"
@@ -51,7 +51,7 @@
             android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/mechanical"
+            android:src="@drawable/civil_engg"
             android:layout_marginStart="10dp" />
 
 
@@ -65,7 +65,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/civillogo_1"/>
+            android:src="@drawable/it"/>
 
         <ImageButton
             android:id="@+id/but6"
