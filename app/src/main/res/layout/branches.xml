@@ -8,6 +8,80 @@
         android:layout_height="wrap_content">
 
 
+        <ImageButton
+            android:id="@+id/but1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/compsci"/>
+
+        <ImageButton
+            android:id="@+id/but2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/but1"
+            android:layout_toEndOf="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/bca"/>
+
+        <ImageButton
+            android:id="@+id/but3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_below="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/it"/>
+
+        <ImageButton
+            android:id="@+id/but4"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_below="@id/but2"
+            android:layout_toRightOf="@id/but1"
+            android:layout_toEndOf="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mechanical"
+            android:layout_marginStart="10dp" />
+
+
+
+        <ImageButton
+            android:id="@+id/but5"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_below="@id/but3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/civillogo_1"/>
+
+        <ImageButton
+            android:id="@+id/but6"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="BUT1"
+            android:layout_below="@id/but4"
+            android:layout_toRightOf="@id/but5"
+            android:layout_toEndOf="@id/but5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/eee_logo_web_new"/>
+
+
+
 
     </RelativeLayout>
 
