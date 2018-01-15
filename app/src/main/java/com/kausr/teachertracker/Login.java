@@ -70,9 +70,12 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         if(result.isSuccess())
         {
             GoogleSignInAccount acc=result.getSignInAccount();
-            Intent i=new Intent(getApplicationContext(),ContactsContract.Profile.class);
+            Intent i=new Intent(getApplicationContext(),branches.class);
             name=acc.getDisplayName();
-            i.putExtra("name",name);
+            Toast toast = Toast.makeText(getApplicationContext(),name, Toast.LENGTH_LONG);
+            toast.show();
+//            name=acc.getDisplayName();
+//            i.putExtra("name",name);
             startActivity(i);
             finish();
         }
