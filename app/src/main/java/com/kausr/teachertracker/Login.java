@@ -1,9 +1,7 @@
 package com.kausr.teachertracker;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;

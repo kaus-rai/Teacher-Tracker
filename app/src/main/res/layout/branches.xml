@@ -16,43 +16,42 @@
             android:id="@+id/but1"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
+            android:contentDescription="@string/cse"
             android:src="@drawable/cse"/>
 
         <ImageButton
             android:id="@+id/but2"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/but1"
             android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/automative"/>
+            android:src="@drawable/automative"
+            android:contentDescription="@string/automotive"/>
 
         <ImageButton
             android:id="@+id/but3"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_below="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/bca"/>
+            android:src="@drawable/bca"
+            android:contentDescription="@string/bca"/>
 
         <ImageButton
             android:id="@+id/but4"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_below="@id/but2"
             android:layout_toRightOf="@id/but1"
             android:layout_toEndOf="@id/but1"
@@ -60,7 +59,9 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/civil"
             android:scaleType="fitCenter"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/civil"
+            />
 
 
 
@@ -68,19 +69,19 @@
             android:id="@+id/but5"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_below="@id/but3"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ece"/>
+            android:src="@drawable/ece"
+            android:contentDescription="@string/ece"
+            />
 
         <ImageButton
             android:id="@+id/but6"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:text="BUT1"
             android:layout_below="@id/but4"
             android:layout_toRightOf="@id/but5"
             android:layout_toEndOf="@id/but5"
@@ -88,7 +89,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/it"/>
+            android:src="@drawable/it"
+            android:contentDescription="@string/it"
+            />
 
 
 
