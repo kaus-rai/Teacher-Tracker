@@ -74,8 +74,8 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             name=acc.getDisplayName();
             Toast toast = Toast.makeText(getApplicationContext(),name, Toast.LENGTH_LONG);
             toast.show();
-//            name=acc.getDisplayName();
-//            i.putExtra("name",name);
+            name=acc.getDisplayName();
+            i.putExtra("name",name);
             startActivity(i);
             finish();
         }
