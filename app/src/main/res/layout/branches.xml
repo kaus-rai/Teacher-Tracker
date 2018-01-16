@@ -5,7 +5,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#000000">
 
 
         <ImageButton
@@ -16,6 +17,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/cse"/>
 
         <ImageButton
@@ -28,7 +30,8 @@
             android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/bca"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/automative"/>
 
         <ImageButton
             android:id="@+id/but3"
@@ -39,7 +42,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/mechanical"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/bca"/>
 
         <ImageButton
             android:id="@+id/but4"
@@ -51,7 +55,8 @@
             android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/civil_engg"
+            android:src="@drawable/civil"
+            android:scaleType="fitCenter"
             android:layout_marginStart="10dp" />
 
 
@@ -65,7 +70,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/it"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/ece"/>
 
         <ImageButton
             android:id="@+id/but6"
@@ -78,7 +84,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/eee_logo_web_new"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/it"/>
 
 
 
