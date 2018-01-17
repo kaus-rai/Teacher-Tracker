@@ -14,3 +14,9 @@ In Phase 2 privilages will be provided to the teacher where Teachers can set the
 In this phase student can access the location of the teacher through GPS. This functionality will only be availiable if teacher wants
 
 Currently we are in Phase 1.
+
+
+# Installation
+Clone the project on your system.
+Open it in Android Studio
+Run the application either on your Phone or on your Emulator.
