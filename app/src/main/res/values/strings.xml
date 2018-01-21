@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Teacher Tracker</string>
+    <string name="cse">CSE</string>
+    <string name="automotive">Automotive</string>
+    <string name="bca">BCA</string>
+    <string name="civil">Civil</string>
+    <string name="ece">ECE</string>
+    <string name="it">IT</string>
+
+
+</resources>

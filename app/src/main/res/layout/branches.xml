@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:schemaLocation="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:ignore="NamespaceTypo"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        >
+
+
+        <ImageButton
+            android:id="@+id/but1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/cse"
+            android:src="@drawable/cse"
+            android:onClick="teacher"
+            />
+
+        <ImageButton
+            android:id="@+id/but2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/but1"
+            android:layout_toEndOf="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/automative"
+            android:contentDescription="@string/automotive"
+            android:onClick="teacher"/>
+
+        <ImageButton
+            android:id="@+id/but3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bca"
+            android:onClick="teacher"
+            android:contentDescription="@string/bca" />
+
+        <ImageButton
+            android:id="@+id/but4"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/but2"
+            android:layout_toRightOf="@id/but1"
+            android:layout_toEndOf="@id/but1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/civil"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/civil"
+            android:onClick="teacher"/>
+
+
+        <ImageButton
+            android:id="@+id/but5"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/but3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ece"
+            android:contentDescription="@string/ece"
+            android:onClick="teacher"/>
+
+        <ImageButton
+            android:id="@+id/but6"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/but4"
+            android:layout_toRightOf="@id/but5"
+            android:layout_toEndOf="@id/but5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/it"
+            android:contentDescription="@string/it"
+            android:onClick="teacher"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
