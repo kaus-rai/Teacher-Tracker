@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.kausr.teachertracker.Teachers">
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +14,8 @@
             android:textAlignment="center"
             android:id="@+id/Branch"
             android:textColor="#FFFFFF"/>
-            <!--android:background="@drawable/back"-->
-            />
+            <!--android:background="@drawable/black"-->
+        />
 
 
         <LinearLayout
