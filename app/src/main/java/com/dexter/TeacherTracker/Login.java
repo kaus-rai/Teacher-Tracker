@@ -29,6 +29,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestProfile()
                 .requestEmail()
                 .build();
         mGoogle = new GoogleApiClient.Builder(this)
@@ -65,7 +66,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         if(result.isSuccess())
         {
             GoogleSignInAccount acc=result.getSignInAccount();
-            Intent i=new Intent(getApplicationContext(),branches.class);
+            Intent i=new Intent(getApplicationContext(),Profile.class);
             name=acc.getDisplayName();
 //            i.putExtra("name",name);
             Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();

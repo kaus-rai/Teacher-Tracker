@@ -16,11 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".branches">
-        </activity>
-        <activity android:name=".Teachers">
-
-        </activity>
+        <activity android:name=".branches"></activity>
+        <activity android:name=".Teachers"></activity>
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>
