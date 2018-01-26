@@ -66,7 +66,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         if(result.isSuccess())
         {
             GoogleSignInAccount acc=result.getSignInAccount();
-            Intent i=new Intent(getApplicationContext(),Profile.class);
+            Intent i=new Intent(getApplicationContext(),branches.class);
             name=acc.getDisplayName();
 //            i.putExtra("name",name);
             Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
