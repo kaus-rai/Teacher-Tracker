@@ -11,8 +11,7 @@ public class Profile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-
+        setContentView(R.layout.profile);
         name=findViewById(R.id.name1);
         String username=getIntent().getExtras().getString("name");
         name.setText(username);

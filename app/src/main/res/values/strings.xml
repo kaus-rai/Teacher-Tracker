@@ -6,6 +6,10 @@
     <string name="civil">Civil</string>
     <string name="ece">ECE</string>
     <string name="it">IT</string>
+    <string name="mail">Wiliam@gmail.com</string>
+    <string name="number">+266 225 225</string>
+    <string name="desc">Image</string>
+    <string name="dashboard">Dashboard</string>
 
 
 </resources>
