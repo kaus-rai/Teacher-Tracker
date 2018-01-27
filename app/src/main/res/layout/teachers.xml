@@ -14,11 +14,7 @@
             android:textAlignment="center"
             android:id="@+id/Branch"
             android:textColor="#FFFFFF"/>
-            <!--android:background="@drawable/black"-->
-        />
-
-
-        <LinearLayout
+<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

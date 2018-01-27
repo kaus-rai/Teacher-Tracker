@@ -33,36 +33,36 @@ public class branches extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
-       // Integer i;
+       //Integer i;
         switch(view.getId())
         {
             case R.id.but1:
-                //i=0;
+              //  i=0;
                 Intent intent1 = new Intent (this,Teachers.class);
                 startActivity(intent1);
                 break;
             case R.id.but2:
-               // i=1;
+              //  i=1;
                 Intent intent2 = new Intent (this,Teachers.class);
                 startActivity(intent2);
                 break;
             case R.id.but3:
-                //i=3;
+              //  i=3;
                 Intent intent3 = new Intent (this,Teachers.class);
                 startActivity(intent3);
                 break;
             case R.id.but4:
-               // i=4;
+             //  i=4;
                 Intent intent4 = new Intent (this,Teachers.class);
                 startActivity(intent4);
                 break;
             case R.id.but5:
-               // i=4;
+              // i=4;
                 Intent intent5 = new Intent (this,Teachers.class);
                 startActivity(intent5);
                 break;
             case R.id.but6:
-               // i=5;
+             // i=5;
                 Intent intent6 = new Intent (this,Teachers.class);
                 startActivity(intent6);
                 break;
