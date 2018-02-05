@@ -1,7 +1,7 @@
 # Teacher-Tracker
 Android Application to Track the schedule of the teachers. The purpose of the project is to increasse the communication between the teachers and the students. There are 3 phases of the project where we will increase the functionality in each phase
 
-#### Currently we are in Phase 1
+#### Currently we are in Phase 2
 
 ## Functionalities in Each Phase
 
