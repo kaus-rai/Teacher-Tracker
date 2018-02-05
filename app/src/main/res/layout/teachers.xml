@@ -13,6 +13,7 @@
             android:textSize="40sp"
             android:textAlignment="center"
             android:id="@+id/Branch"
+            android:text="@string/teach"
             android:textColor="#FFFFFF"/>
 <LinearLayout
             android:layout_width="match_parent"
@@ -20,9 +21,10 @@
             android:orientation="horizontal">
             <TextView
                 android:id="@+id/text1"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
+                android:text="@string/teach"
                 />
             <Button
                 android:id="@+id/button1"
@@ -40,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
+                android:text="@string/teach"
                 />
             <Button
                 android:id="@+id/button2"
@@ -58,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text3"
                 android:layout_weight="4"
+                android:text="@string/teach"
                 />
             <Button
                 android:id="@+id/button3"
@@ -75,6 +79,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text4"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button4"
@@ -92,6 +98,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text5"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button5"
@@ -109,6 +117,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text6"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button6"
@@ -126,6 +136,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text7"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button7"
@@ -143,6 +155,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text8"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button8"
@@ -160,6 +174,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text9"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button9"
@@ -177,6 +193,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/text10"
                 android:layout_weight="4"
+                android:text="@string/teach"
+
                 />
             <Button
                 android:id="@+id/button10"
