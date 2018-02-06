@@ -28,6 +28,14 @@
             </intent-filter>
 
         </activity>
+
+
+
+    <activity
+        android:name=".time_table">
+
+    </activity>
+
     </application>
 
 </manifest>
