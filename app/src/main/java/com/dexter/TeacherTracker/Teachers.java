@@ -1,5 +1,4 @@
 package com.dexter.TeacherTracker;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,21 +6,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class Teachers extends AppCompatActivity implements View.OnClickListener {
 
     Button button1,button2,button3,button4,button5,button6,button7,button8,button9,button10;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teachers);
         TextView Branch;
-        Branch = findViewById(R.id.Branch);
         Intent i ;
         i = getIntent();
+        Branch = findViewById(R.id.Branch);
         String BrancH;
-        BrancH = i.getStringExtra("branch");
+        BrancH = i.getStringExtra("name");
         Branch.setText(BrancH);
         button1=findViewById(R.id.button1);
         button1.setOnClickListener(this);
@@ -43,6 +42,7 @@ public class Teachers extends AppCompatActivity implements View.OnClickListener 
         button9.setOnClickListener(this);
         button10=findViewById(R.id.button10);
         button10.setOnClickListener(this);
+
 }
 
     @Override
