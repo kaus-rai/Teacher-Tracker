@@ -121,7 +121,5 @@ public class Teachers extends AppCompatActivity implements View.OnClickListener 
                 break;
 
         }
-
-
     }
 }
