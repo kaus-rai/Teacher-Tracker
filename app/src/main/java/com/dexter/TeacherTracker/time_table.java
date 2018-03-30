@@ -12,6 +12,7 @@ public class time_table extends AppCompatActivity{
     ImageView image;
     TextView text;
     public int var;
+    String value;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,47 @@ public class time_table extends AppCompatActivity{
     private void init() {
         intent = getIntent();
         var =intent.getIntExtra("T1",-1);
-        text.setText(Integer.toString(var));
+        value = Integer.toString(var);
+        if(value.equals("1"))
+        {
+            image.setImageResource(R.drawable.t1);
+        }
+        else if(value.equals("2"))
+        {
+            image.setImageResource(R.drawable.t2);
+        }
+        else if(value.equals("3"))
+        {
+            image.setImageResource(R.drawable.t3);
+        }
+        else if(value.equals("4"))
+        {
+            image.setImageResource(R.drawable.t4);
+        }
+        else if(value.equals("5"))
+        {
+            image.setImageResource(R.drawable.t5);
+        }
+        else if(value.equals("6"))
+        {
+            image.setImageResource(R.drawable.t6);
+        }
+        else if(value.equals("7"))
+        {
+            image.setImageResource(R.drawable.t7);
+        }
+        else if(value.equals("8"))
+        {
+            image.setImageResource(R.drawable.t8);
+        }
+        else if(value.equals("9"))
+        {
+            image.setImageResource(R.drawable.t1);
+        }
+        else if(value.equals("10"))
+        {
+            image.setImageResource(R.drawable.t2);
+        }
 
     }
 
