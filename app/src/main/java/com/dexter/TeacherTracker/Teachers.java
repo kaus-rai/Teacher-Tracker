@@ -50,74 +50,57 @@ public class Teachers extends AppCompatActivity implements View.OnClickListener 
         switch(view.getId())
         {
             case R.id.button1:
-                int b=1;
                 Intent intent1 = new Intent (this,time_table.class);
-                intent1.putExtra("T1",b);
+                intent1.putExtra("T1",1);
                 startActivity(intent1);
                 break;
             case R.id.button2:
-                int b2=1;
                 Intent intent2 = new Intent (this,time_table.class);
-                intent2.putExtra("T1",b2);
+                intent2.putExtra("T1",2);
                 startActivity(intent2);
 
                 break;
             case R.id.button3:
-                int b3=1;
                 Intent intent3 = new Intent (this,time_table.class);
-                intent3.putExtra("T1",b3);
+                intent3.putExtra("T1",3);
                 startActivity(intent3);
 
                 break;
             case R.id.button4:
-                int b4=1;
                 Intent intent4 = new Intent (this,time_table.class);
-                intent4.putExtra("T1",b4);
+                intent4.putExtra("T1",4);
                 startActivity(intent4);
 
                 break;
             case R.id.button5:
-                int b5=1;
                 Intent intent5 = new Intent (this,time_table.class);
-                intent5.putExtra("T1",b5);
+                intent5.putExtra("T1",5);
                 startActivity(intent5);
-
                 break;
             case R.id.button6:
-                int b6=1;
                 Intent intent6 = new Intent (this,time_table.class);
-                intent6.putExtra("T1",b6);
+                intent6.putExtra("T1",6);
                 startActivity(intent6);
-
                 break;
             case R.id.button7:
-                int b7=1;
                 Intent intent7 = new Intent (this,time_table.class);
-                intent7.putExtra("T1",b7);
+                intent7.putExtra("T1",7);
                 startActivity(intent7);
-
                 break;
-
             case R.id.button8:
-                int b8=1;
                 Intent intent8 = new Intent (this,time_table.class);
-                intent8.putExtra("T1",b8);
+                intent8.putExtra("T1",8);
                 startActivity(intent8);
-
                 break;
             case R.id.button9:
-                int b9=1;
                 Intent intent9 = new Intent (this,time_table.class);
-                intent9.putExtra("T1",b9);
+                intent9.putExtra("T1",9);
                 startActivity(intent9);
-
                 break;
             case R.id.button10:
-                int b10=1;
                 Intent intent10 = new Intent (this,time_table.class);
-                intent10.putExtra("T1",b10);
+                intent10.putExtra("T1",10);
                 startActivity(intent10);
-
                 break;
 
         }
