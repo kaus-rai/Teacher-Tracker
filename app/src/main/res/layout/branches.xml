@@ -25,7 +25,7 @@
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
             android:contentDescription="@string/cse"
-            android:src="@drawable/cse"
+            android:src="@drawable/cse2"
             android:onClick="teacher"
             />
 
@@ -39,7 +39,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/automative"
+            android:src="@drawable/mechanical"
             android:contentDescription="@string/automotive"
             android:onClick="teacher"/>
 
@@ -52,7 +52,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/bca"
+            android:src="@drawable/bca2"
             android:onClick="teacher"
             android:contentDescription="@string/bca" />
 
@@ -65,7 +65,7 @@
             android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/civil"
+            android:src="@drawable/civil2"
             android:scaleType="fitCenter"
             android:layout_marginStart="10dp"
             android:contentDescription="@string/civil"
@@ -81,7 +81,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ece"
+            android:src="@drawable/ece2"
             android:contentDescription="@string/ece"
             android:onClick="teacher"/>
 
@@ -96,7 +96,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/it"
+            android:src="@drawable/IT2"
             android:contentDescription="@string/it"
             android:onClick="teacher"/>
 
