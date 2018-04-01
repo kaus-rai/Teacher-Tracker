@@ -6,6 +6,14 @@
     <string name="civil">Civil</string>
     <string name="ece">ECE</string>
     <string name="it">IT</string>
+    <string name="mail">Wiliam@gmail.com</string>
+    <string name="number">+266 225 225</string>
+    <string name="desc">Image</string>
+    <string name="set">SET STATUS</string>
+    <string name="view">View</string>
+    <string name="teach">Teacher Name</string>
+    <string name="teacher_time_table">Select You Teacher</string>
+
 
 
 </resources>

@@ -12,7 +12,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     android:orientation="vertical">
 
         <LinearLayout
-            android:background="@drawable/gradientbackground"
+            android:background="#000000"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:orientation="vertical">
@@ -21,7 +21,8 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_gravity="center_horizontal"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/user"/>
+                android:src="@drawable/user"
+                android:contentDescription="@string/desc"/>
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
@@ -31,6 +32,11 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="21sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_out"/>
+                <!--android:onClick="sign_out"/>-->
         </LinearLayout>
 
 
@@ -55,7 +61,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_height="wrap_content"
                 android:drawablePadding="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Wiliam@gmail.com"
+                android:text="@string/mail"
                 android:textSize="20sp"
                 android:drawableLeft="@drawable/ic_email"
                 android:drawableStart="@drawable/ic_email"
@@ -76,7 +82,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="+266 225 225"
+                android:text="@string/number"
                 android:drawablePadding="20dp"
                 android:textSize="20sp"
                 android:drawableLeft="@drawable/ic_phone"
@@ -84,6 +90,13 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 tools:ignore="RtlSymmetry"
                 android:drawableStart="@drawable/ic_phone" />
         </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+        </Spinner>
     </LinearLayout>
 
     <Button
@@ -93,8 +106,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dashboard"
-        android:onClick="toDashboard"/>
+        android:text="@string/set"
+        />
+
 
 </LinearLayout>
 </ScrollView>
