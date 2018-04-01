@@ -55,6 +55,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             tools:ignore="RtlSymmetry">
 
             <TextView
+                android:id="@+id/name"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
@@ -108,6 +109,18 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:layout_height="wrap_content"
         android:text="@string/set"
         />
+    <Button
+        android:id="@+id/locations"
+        android:textColor="#fff"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOCATION"
+
+        />
+
 
 
 </LinearLayout>
