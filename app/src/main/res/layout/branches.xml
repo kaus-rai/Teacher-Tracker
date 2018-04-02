@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:schemaLocation="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:ignore="NamespaceTypo"
-    >
+    tools:ignore="NamespaceTypo">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        >
+        android:background="#000000">
 
 
         <ImageButton
             android:id="@+id/but1"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
-            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/cse"
-            android:src="@drawable/cse2"
             android:onClick="teacher"
-            />
+            android:scaleType="fitCenter"
+            android:src="@drawable/cse2" />
 
         <ImageButton
             android:id="@+id/but3"
@@ -37,25 +33,25 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/bca2"
+            android:contentDescription="@string/bca"
             android:onClick="teacher"
-            android:contentDescription="@string/bca" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/bca2" />
 
         <ImageButton
             android:id="@+id/but4"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_below="@id/but2"
-            android:layout_toRightOf="@id/but1"
-            android:layout_toEndOf="@id/but1"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/civil2"
-            android:scaleType="fitCenter"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/but1"
+            android:layout_toRightOf="@id/but1"
             android:contentDescription="@string/civil"
-            android:onClick="teacher"/>
+            android:onClick="teacher"
+            android:scaleType="fitCenter"
+            android:src="@drawable/civil2" />
 
 
         <ImageButton
@@ -64,27 +60,27 @@
             android:layout_height="180dp"
             android:layout_below="@id/but3"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ece2"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/ece"
-            android:onClick="teacher"/>
+            android:onClick="teacher"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ece2" />
 
         <ImageButton
             android:id="@+id/but6"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_below="@id/but4"
-            android:layout_toRightOf="@id/but5"
-            android:layout_toEndOf="@id/but5"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/it2"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/but5"
+            android:layout_toRightOf="@id/but5"
             android:contentDescription="@string/it"
-            android:onClick="teacher"/>
+            android:onClick="teacher"
+            android:scaleType="fitCenter"
+            android:src="@drawable/it2" />
 
 
     </RelativeLayout>
