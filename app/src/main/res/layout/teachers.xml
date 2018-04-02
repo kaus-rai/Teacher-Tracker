@@ -10,7 +10,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:textSize="40sp"
+            android:textSize="39sp"
             android:textAlignment="center"
             android:id="@+id/Branch"
             android:background="@drawable/back"
