@@ -97,7 +97,10 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
                         DatabaseReference mChildRef = mRootRef.child("locations");
 
 
-
+                        Log.w("On location changed","On location changed");
+                        Log.e("latitude",String.valueOf(latitude));
+                        Log.e("longitude",String.valueOf(longitude));
+                        //Log.w("On location changed","On location changed");
                       //  mChildRef.setValue(longitude);
 
 
@@ -108,11 +111,15 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
 
                     @Override
                     public void onStatusChanged(String s, int i, Bundle bundle) {
+                        Log.w("On Status changed","On status changed");
+
 
                     }
 
                     @Override
                     public void onProviderEnabled(String s) {
+                        Log.w("On ProviderEnabled ","On provider enabled");
+
 
                     }
 
@@ -120,6 +127,8 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
                     public void onProviderDisabled(String s) {
                         Intent intent = new Intent (Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                         startActivity(intent);
+                        Log.w("On Providerdisabled ","On provider disabled");
+
 
                     }
                 };
@@ -148,7 +157,9 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
             case 10:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                     configureButton();
+
                 return;
+
         }
     }
 
@@ -165,8 +176,10 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
             return;
         }
         locationManager.requestLocationUpdates("gps", 5000, 10, locationListener);
+        Log.w("Continue from here ","Continue from here");
 
-     }
+
+    }
 
 
 
