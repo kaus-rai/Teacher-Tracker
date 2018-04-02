@@ -30,20 +30,6 @@
             />
 
         <ImageButton
-            android:id="@+id/but2"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/but1"
-            android:layout_toEndOf="@id/but1"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/mechanical"
-            android:contentDescription="@string/automotive"
-            android:onClick="teacher"/>
-
-        <ImageButton
             android:id="@+id/but3"
             android:layout_width="180dp"
             android:layout_height="180dp"
@@ -102,5 +88,19 @@
 
 
     </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/but2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/but1"
+        android:layout_toRightOf="@id/but1"
+        android:contentDescription="@string/automotive"
+        android:onClick="teacher"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mechanical" />
 
 </ScrollView>
