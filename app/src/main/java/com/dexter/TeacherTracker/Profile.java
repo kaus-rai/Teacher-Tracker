@@ -111,7 +111,7 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
 
                     @Override
                     public void onStatusChanged(String s, int i, Bundle bundle) {
-                        Log.w("On Status changed","On status changed");
+                        Log.w("On Status changed","On status changed and now make the changes here");
 
 
                     }
