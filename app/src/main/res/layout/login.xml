@@ -29,11 +29,11 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="50dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_alignEnd="@+id/signin"
         android:layout_alignRight="@+id/signin"
         android:layout_alignTop="@+id/imageView2"
-        app:srcCompat="@drawable/instagram2" />
+        app:srcCompat="@drawable/instagram" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -41,7 +41,7 @@
         android:layout_height="30dp"
         android:layout_alignTop="@+id/RelativeLayout"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/facebook2" />
+        app:srcCompat="@drawable/facebook" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -50,6 +50,6 @@
         android:layout_alignLeft="@+id/signin"
         android:layout_alignStart="@+id/signin"
         android:layout_alignTop="@+id/imageView2"
-        app:srcCompat="@drawable/twitter2" />
+        app:srcCompat="@drawable/twitter" />
 
 </RelativeLayout>
