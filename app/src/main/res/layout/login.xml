@@ -29,7 +29,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="50dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_alignEnd="@+id/signin"
         android:layout_alignRight="@+id/signin"
         android:layout_alignTop="@+id/imageView2"

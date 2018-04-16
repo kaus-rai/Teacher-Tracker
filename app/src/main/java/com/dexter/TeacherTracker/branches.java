@@ -45,7 +45,7 @@ public class branches extends AppCompatActivity implements View.OnClickListener 
             case R.id.but2:
               //  i=1;
                 Intent intent2 = new Intent (this,Teachers.class);
-                intent2.putExtra("name","Automative Engineering");
+                intent2.putExtra("name","Mechanical Engineering");
                 startActivity(intent2);
                 break;
             case R.id.but3:
