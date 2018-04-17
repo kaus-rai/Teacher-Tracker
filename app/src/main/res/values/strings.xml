@@ -13,7 +13,8 @@
     <string name="view">View</string>
     <string name="teach">Teacher Name</string>
     <string name="teacher_time_table">Select You Teacher</string>
-
+    <string name="situm_user">dexterslab2595@gmail.com</string>
+    <string name="situm_api">48f9726828b5dc87c3f2b4c76d038fc2dce6194c6ac6c281e1fc1714aa60e977</string>
 
 
 </resources>
