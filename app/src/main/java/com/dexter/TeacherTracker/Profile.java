@@ -1,10 +1,9 @@
 package com.dexter.TeacherTracker;
 
-import android.*;
-import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
 import android.provider.Settings;
@@ -24,19 +23,16 @@ import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 
-import java.util.jar.*;
 
-public class Profile extends AppCompatActivity implements AdapterView.OnItemSelectedListener, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
+
+public  class Profile extends AppCompatActivity implements AdapterView.OnItemSelectedListener, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
 
     TextView name;
     Spinner sp;
     GoogleApiClient mGoogleSignInClient;
-    Button sign_out, location;
-    LocationManager locationManager;
+    Button sign_out, locations;
+     LocationManager locationManager;
     LocationListener locationListener;
 
     @Override
@@ -45,8 +41,8 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
         setContentView(R.layout.profile);
         sign_out = findViewById(R.id.sign);
         sign_out.setOnClickListener(this);
-        location = findViewById(R.id.locations);
-        location.setOnClickListener(this);
+        locations = findViewById(R.id.locations);
+        locations.setOnClickListener(this);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestProfile()
@@ -79,72 +75,74 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
         switch (v.getId()) {
 
             case R.id.sign_out:
-                signOut();
+                //signOut();
                 break;
 
             case R.id.locations:
                 locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
                 locationListener = new LocationListener() {
                     @Override
-                    public void onLocationChanged(Location location) {
-
-                        double lat = location.getLatitude();
-                        double lon = location.getLongitude();
-                        Log.e("Lat", String.valueOf(lat));
-                        Log.e("Lng", String.valueOf(lon));
+                    public void onLocationChanged(Location locations) {
+                        double latitude = locations.getLatitude();
+                        double longitude = locations.getLongitude();
+                        Log.w("LAT", String.valueOf(latitude));
+                        Log.w("LNG",String.valueOf(longitude));
                     }
 
-
+                    @Override
                     public void onStatusChanged(String s, int i, Bundle bundle) {
 
+
                     }
 
+                    @Override
                     public void onProviderEnabled(String s) {
 
+
                     }
 
+                    @Override
                     public void onProviderDisabled(String s) {
                         Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                         startActivity(intent);
 
+
                     }
 
-
                 };
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                        // TODO: Consider calling
-                        //    ActivityCompat#requestPermissions
-                        // here to request the missing permissions, and then overriding
-                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                        //                                          int[] grantResults)
-                        // to handle the case where the user grants the permission. See the documentation
-                        // for ActivityCompat#requestPermissions for more details.
-                        return;
+                if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        requestPermissions(new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION, android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.INTERNET}, 10);
                     }
                 } else {
                     configureButton();
                 }
 
 
+
+
+
+break;
         }
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch(requestCode)
-        {
-            case 10:
-                if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
-                    configureButton();
-                    return;
+     @Override
+     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permission, @NonNull int[] grantResults) {
+         switch (requestCode) {
+             case 10:
+                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                     configureButton();
 
-
-        }
-    }
-
+         }
+     }
     private void configureButton() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -153,20 +151,15 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
             return;
+
         }
-        locationManager.requestLocationUpdates("gps", 300000, 0, (android.location.LocationListener) locationListener);
+        locationManager.requestLocationUpdates("gps",5000,0,locationListener);
     }
 
 
 
-    private void signOut() {
-     //   mGoogleSignInClient.signOut.addOnCompleteListener(this, new OnCompleteListener<Void>() {
-              //      @Override
-       //             public void onComplete(@NonNull Task<Void> task) {
-                        // ...
-             //       }
-            //    });
-    }
+
+
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
@@ -177,4 +170,6 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
+
 }
