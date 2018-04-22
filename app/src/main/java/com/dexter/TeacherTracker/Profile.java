@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -27,6 +28,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.jar.*;
 
@@ -38,6 +41,10 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
     Button sign_out, location;
     LocationManager locationManager;
     LocationListener locationListener;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    Intent i;
+    String acc_name;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +54,8 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
         sign_out.setOnClickListener(this);
         location = findViewById(R.id.locations);
         location.setOnClickListener(this);
+        i =getIntent();
+        acc_name= i.getStringExtra("acc_name");
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestProfile()
@@ -71,8 +80,9 @@ public class Profile extends AppCompatActivity implements AdapterView.OnItemSele
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
         String item = (String) parent.getItemAtPosition(pos);
-
-
+        Toast.makeText(this, item, Toast.LENGTH_SHORT).show();
+        DatabaseReference myRef = database.getReference("Teacher");
+        myRef.child(acc_name).setValue(item);
     }
 
     public void onClick(View v) {
