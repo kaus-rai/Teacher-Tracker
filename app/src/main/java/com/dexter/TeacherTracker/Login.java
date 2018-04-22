@@ -177,13 +177,13 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             name=acc.getDisplayName();
             email=acc.getEmail();
             email   = email.substring(0, email.lastIndexOf("@"));
-            DatabaseReference myref = database.getReference("Student");
+            DatabaseReference myref = database.getReference("Teacher");
             myref.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     Map <String, Object> value= (Map<String, Object>) dataSnapshot.getValue();
                     Boolean b = value.containsKey(email);
-                    if (b)
+                    if (!b)
                     {
                         Intent i=new Intent(getApplicationContext(),branches.class);
                         Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
@@ -192,7 +192,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                     }
                     else
                     {
-                        Intent i=new Intent(getApplicationContext(),Teachers.class);
+                        Intent i=new Intent(getApplicationContext(),Profile.class);
                         Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
                         startActivity(i);
                         finish();
