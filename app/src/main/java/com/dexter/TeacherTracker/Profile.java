@@ -121,7 +121,7 @@ public  class Profile extends AppCompatActivity implements AdapterView.OnItemSel
                         requestPermissions(new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION, android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.INTERNET}, 10);
                     }
                 } else {
-                    configureButton();
+                    configButton();
                 }
 
 
@@ -137,11 +137,11 @@ break;
          switch (requestCode) {
              case 10:
                  if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-                     configureButton();
+                     configButton();
 
          }
      }
-    private void configureButton() {
+    private void configButton() {
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
