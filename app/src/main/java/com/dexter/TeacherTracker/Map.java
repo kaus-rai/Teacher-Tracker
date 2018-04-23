@@ -16,8 +16,6 @@ import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
-//import es.situm.gettingstarted.R;
 import es.situm.sdk.SitumSdk;
 import es.situm.sdk.error.Error;
 import es.situm.sdk.location.LocationListener;
@@ -138,9 +136,6 @@ public class Map extends AppCompatActivity {
 
     }
 
-    /**
-     * Display the floor image
-     */
     private void displayFloorImage() {
         //Get all the building floors
         SitumSdk.communicationManager().fetchFloorsFromBuilding(selectedBuilding, new Handler<Collection<Floor>>() {
@@ -169,9 +164,6 @@ public class Map extends AppCompatActivity {
         });
     }
 
-    /**
-     * Start the indoor positioning in the building
-     */
     private void startPositioning() {
         if (selectedBuilding == null) {
             toggleButtonStart.setChecked(false);
@@ -192,17 +184,11 @@ public class Map extends AppCompatActivity {
         SitumSdk.locationManager().removeUpdates(locationListener);
     }
 
-    /**
-     * Open the location settings (for API >= 23)
-     */
     private void showLocationSettings() {
         Toast.makeText(this, "You must enable location", Toast.LENGTH_LONG).show();
         startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS), 0);
     }
 
-    /**
-     * Open the dialog to request location permission (for API >= 23)
-     */
     private void requestLocationPermission() {
         ActivityCompat.requestPermissions(Map.this,
                 new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
