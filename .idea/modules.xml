@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Teacher-Tracker.iml" filepath="$PROJECT_DIR$/Teacher-Tracker.iml" />
       <module fileurl="file://C:\Users\kausr\AndroidStudioProjects\TeacherTracker\Teacher-Tracker.iml" filepath="C:\Users\kausr\AndroidStudioProjects\TeacherTracker\Teacher-Tracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/TeacherTracker.iml" filepath="$PROJECT_DIR$/TeacherTracker.iml" />
       <module fileurl="file://C:\Users\Rachit\AndroidStudioProjects\Teacher-Tracker\TeacherTracker.iml" filepath="C:\Users\Rachit\AndroidStudioProjects\Teacher-Tracker\TeacherTracker.iml" />

@@ -4,21 +4,26 @@ package com.dexter.TeacherTracker;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class time_table extends AppCompatActivity{
+public class time_table extends AppCompatActivity implements View.OnClickListener {
     Intent intent;
     ImageView image;
     TextView text;
     public int var;
     String value;
+    Button button;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.time_table);
-        image = findViewById(R.id.image);
-        text = findViewById(R.id.text);
+        image = (ImageView) findViewById(R.id.image);
+        text = (TextView) findViewById(R.id.text);
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(this);
         init();
     }
 
@@ -69,4 +74,9 @@ public class time_table extends AppCompatActivity{
 
     }
 
+    @Override
+    public void onClick(View view) {
+        Intent i = new Intent(this,MapActivity.class);
+        startActivity(i);
+    }
 }

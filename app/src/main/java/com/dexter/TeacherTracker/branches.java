@@ -16,12 +16,12 @@ public class branches extends AppCompatActivity implements View.OnClickListener 
 
     private void init() {
         ImageButton b1,b2,b3,b4,b5,b6;
-        b1= findViewById(R.id.but1);
-        b2= findViewById(R.id.but2);
-        b3= findViewById(R.id.but3);
-        b4= findViewById(R.id.but4);
-        b5= findViewById(R.id.but5);
-        b6= findViewById(R.id.but6);
+        b1= (ImageButton) findViewById(R.id.but1);
+        b2= (ImageButton) findViewById(R.id.but2);
+        b3= (ImageButton) findViewById(R.id.but3);
+        b4= (ImageButton) findViewById(R.id.but4);
+        b5= (ImageButton) findViewById(R.id.but5);
+        b6= (ImageButton) findViewById(R.id.but6);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
